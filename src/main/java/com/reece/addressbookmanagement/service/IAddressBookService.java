@@ -6,7 +6,6 @@ import java.util.Collection;
 import java.util.List;
 
 public interface IAddressBookService {
-
     /**
      * Adds the contact into the address book.
      *
