@@ -32,7 +32,8 @@ Running The Address Book Management REST Application
 Docker Image
 -------------------
 A docker image has also been supplid. Once imported into docker, the following line can be used to run a container:
-docker run -p 8080:8080 -t addressmanager:0.0.1-SNAPSHOT
+Load into docker : docker load --input addressbookmanager.tar
+Run the image: docker run -p 8080:8080 -t addressbookmanager:0.0.1-SNAPSHOT
  
 jar
 --------------------
