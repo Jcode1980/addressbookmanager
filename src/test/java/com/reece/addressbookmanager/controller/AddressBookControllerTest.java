@@ -48,8 +48,6 @@ public class AddressBookControllerTest {
     @SuppressWarnings("unused")
     private ModelMapper modelMapper;
 
-    //private AddressBook addressBook;
-
     @Before
     public void setUp() {
         newContact1 = new Contact("john", "Doe", "123525623");
@@ -107,7 +105,6 @@ public class AddressBookControllerTest {
         ContactDto newContactDto = new ContactDto("David", "Shepparton", "123453432");
         given(addressBookService.addContactToAddressBook(1L, newContact)).willReturn(newContact);
 
-        //log.info("this is the request body: " + newContactDto);
         given(modelMapper.map(newContact, ContactDto.class)).willReturn(newContactDto);
 
         mvc.perform(post(addContactToAddressBook)
