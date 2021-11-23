@@ -54,9 +54,6 @@ public class AddressBookControllerTest {
     public void setUp() {
         newContact1 = new Contact("john", "Doe", "123525623");
         newContact2 = new Contact("Joe", "Harris", "675423432");
-
-        //newContact1Dto = new ContactDto("John", "Doe", "123525623");
-        //newContact2Dto = new ContactDto("Joe", "Harris", "675423432");
         address1Contacts = Arrays.asList(newContact1, newContact2);
 
         given(modelMapper.map(newContact1, ContactDto.class)).willReturn(new ContactDto("John", "Doe", "123525623"));
@@ -83,7 +80,6 @@ public class AddressBookControllerTest {
 
         Contact newContact4 = new Contact("William", "Harris", "412345156");
 
-        //ContactDto newContact3Dto = new ContactDto("John", "Doe", "123525623");
         ContactDto newContact4Dto = new ContactDto("William", "Harris", "412345156");
         List<Contact> uniqueAddressContacts = Arrays.asList(newContact1, newContact2, newContact4);
 
