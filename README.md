@@ -3,13 +3,13 @@ Working with Address Book manager
 By default, the application's in memory database is set up with 3 address books with id 1 to 3.
 (Refer to import.sql) Contacts must be added to those address books else an exception will occur.
 
-
 prerequisites for running in Intellij
 --------------
 The following items should be installed in your system:
 - Maven 4
 - IntelliJ
 - Java 11
+- Lombok plugin
 
 Running The Address Book Management REST Application
 ----------------------------------------------------
